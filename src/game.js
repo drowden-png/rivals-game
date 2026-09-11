@@ -77,9 +77,9 @@ function update() {
     };
 
     const p2Controls = {
-        up: keysPressed['arrowup'],
-        left: keysPressed['arrowleft'],
-        right: keysPressed['arrowright'],
+        up: keysPressed['arrowup'] || keysPressed['ArrowUp'],
+        left: keysPressed['arrowleft'] || keysPressed['ArrowLeft'],
+        right: keysPressed['arrowright'] || keysPressed['ArrowRight'],
         shift: keysPressed['shift']
     };
 
